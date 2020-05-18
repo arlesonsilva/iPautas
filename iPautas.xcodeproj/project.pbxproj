@@ -16,6 +16,12 @@
 		DFBBB8CD245BA08300D3F4B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBBB8CB245BA08300D3F4B0 /* LaunchScreen.storyboard */; };
 		DFBBB8D8245BA08400D3F4B0 /* iPautasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8D7245BA08400D3F4B0 /* iPautasTests.swift */; };
 		DFBBB8E3245BA08400D3F4B0 /* iPautasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8E2245BA08400D3F4B0 /* iPautasUITests.swift */; };
+		DFBBB8F1245BB8E400D3F4B0 /* CadastroUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8F0245BB8E400D3F4B0 /* CadastroUsuarioViewController.swift */; };
+		DFBBB8F5245DF74800D3F4B0 /* EsqueciMinhaSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8F4245DF74800D3F4B0 /* EsqueciMinhaSenhaViewController.swift */; };
+		DFBBB8F7245F2DD500D3F4B0 /* PerfilUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8F6245F2DD500D3F4B0 /* PerfilUsuarioViewController.swift */; };
+		DFBBB8F9245F329C00D3F4B0 /* PautasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8F8245F329C00D3F4B0 /* PautasTableViewController.swift */; };
+		DFBBB8FB245F44E600D3F4B0 /* AdicionarPautaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8FA245F44E600D3F4B0 /* AdicionarPautaViewController.swift */; };
+		DFBBB8FD245F8E0000D3F4B0 /* PautaCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBB8FC245F8E0000D3F4B0 /* PautaCelula.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		DFBBB8DE245BA08400D3F4B0 /* iPautasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPautasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBBB8E2245BA08400D3F4B0 /* iPautasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPautasUITests.swift; sourceTree = "<group>"; };
 		DFBBB8E4245BA08400D3F4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBBB8F0245BB8E400D3F4B0 /* CadastroUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroUsuarioViewController.swift; sourceTree = "<group>"; };
+		DFBBB8F4245DF74800D3F4B0 /* EsqueciMinhaSenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsqueciMinhaSenhaViewController.swift; sourceTree = "<group>"; };
+		DFBBB8F6245F2DD500D3F4B0 /* PerfilUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilUsuarioViewController.swift; sourceTree = "<group>"; };
+		DFBBB8F8245F329C00D3F4B0 /* PautasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PautasTableViewController.swift; sourceTree = "<group>"; };
+		DFBBB8FA245F44E600D3F4B0 /* AdicionarPautaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarPautaViewController.swift; sourceTree = "<group>"; };
+		DFBBB8FC245F8E0000D3F4B0 /* PautaCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PautaCelula.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +116,17 @@
 				DFBBB8BD245BA07C00D3F4B0 /* AppDelegate.swift */,
 				DFBBB8BF245BA07C00D3F4B0 /* SceneDelegate.swift */,
 				DFBBB8C1245BA07C00D3F4B0 /* ViewController.swift */,
+				DFBBB8F4245DF74800D3F4B0 /* EsqueciMinhaSenhaViewController.swift */,
+				DFBBB8F8245F329C00D3F4B0 /* PautasTableViewController.swift */,
+				DFBBB8FA245F44E600D3F4B0 /* AdicionarPautaViewController.swift */,
+				DFBBB8F6245F2DD500D3F4B0 /* PerfilUsuarioViewController.swift */,
+				DFBBB8F0245BB8E400D3F4B0 /* CadastroUsuarioViewController.swift */,
 				DFBBB8C3245BA07C00D3F4B0 /* Main.storyboard */,
 				DFBBB8C9245BA08300D3F4B0 /* Assets.xcassets */,
 				DFBBB8CB245BA08300D3F4B0 /* LaunchScreen.storyboard */,
 				DFBBB8CE245BA08300D3F4B0 /* Info.plist */,
 				DFBBB8C6245BA07C00D3F4B0 /* iPautas.xcdatamodeld */,
+				DFBBB8FC245F8E0000D3F4B0 /* PautaCelula.swift */,
 			);
 			path = iPautas;
 			sourceTree = "<group>";
@@ -262,10 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBBB8FB245F44E600D3F4B0 /* AdicionarPautaViewController.swift in Sources */,
 				DFBBB8C2245BA07C00D3F4B0 /* ViewController.swift in Sources */,
+				DFBBB8F1245BB8E400D3F4B0 /* CadastroUsuarioViewController.swift in Sources */,
+				DFBBB8F9245F329C00D3F4B0 /* PautasTableViewController.swift in Sources */,
 				DFBBB8BE245BA07C00D3F4B0 /* AppDelegate.swift in Sources */,
 				DFBBB8C0245BA07C00D3F4B0 /* SceneDelegate.swift in Sources */,
 				DFBBB8C8245BA07C00D3F4B0 /* iPautas.xcdatamodeld in Sources */,
+				DFBBB8F5245DF74800D3F4B0 /* EsqueciMinhaSenhaViewController.swift in Sources */,
+				DFBBB8F7245F2DD500D3F4B0 /* PerfilUsuarioViewController.swift in Sources */,
+				DFBBB8FD245F8E0000D3F4B0 /* PautaCelula.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +461,7 @@
 		DFBBB8E8245BA08400D3F4B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z82LFNB7S;
 				INFOPLIST_FILE = iPautas/Info.plist;
@@ -455,7 +479,7 @@
 		DFBBB8E9245BA08400D3F4B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z82LFNB7S;
 				INFOPLIST_FILE = iPautas/Info.plist;

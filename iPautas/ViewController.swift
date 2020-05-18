@@ -33,9 +33,18 @@ class ViewController: UIViewController {
         context = appDelegate.persistentContainer.viewContext
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     func buscarUsuario() {
-        let predicate = NSPredicate (format:"email = %@" ,email.text!)
         let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario")
+        let predicate = NSPredicate (format:"email = %@", email.text!)
         requisicao.predicate = predicate
         do {
             let usuarios = try context.fetch(requisicao)
@@ -45,7 +54,7 @@ class ViewController: UIViewController {
                     let senha: String = usuario.value(forKey: "senha") as! String
                     if email == self.email.text {
                         if senha == self.senha.text {
-                            print("Email e Senha esta ok")
+                            atualizarUsuarioLogado(usuario: usuario)
                         }else {
                             alerta(mensagem: "Senha inválida")
                             return
@@ -62,6 +71,16 @@ class ViewController: UIViewController {
         } catch {
             alerta(mensagem: "Erro ao buscar usuário")
             return
+        }
+    }
+    
+    func atualizarUsuarioLogado(usuario: NSManagedObject) {
+        usuario.setValue("S", forKey: "login")
+        do {
+            try context.save()
+            print("Usuario logado atualizado")
+        } catch {
+            print("Erro ao tentar atualizar usuario")
         }
     }
     

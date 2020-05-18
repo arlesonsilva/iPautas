@@ -6,4 +6,14 @@
 //  Copyright © 2020 Arleson Silva. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class PautaCelula: UITableViewCell {
+    
+    @IBOutlet weak var titulo: UILabel!
+    @IBOutlet weak var breveDescricao: UILabel!
+    @IBOutlet weak var descricaoCompleta: UITextView!
+    @IBOutlet weak var autor: UILabel!
+    @IBOutlet weak var botaoAcao: UIButton!
+    
+}
